@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>  </title>
+</head>
+<body>
+    <div class="pop">
+        <h1>До встречи!
+        спасибо, что согласилась на свидание!
+        я зайду за тобой в 6, не опаздывай!</h1>
+    </div>
+    <div class="box3"></div>
+    
+
+    <script>
+        const savedDate = localStorage.getItem('SavedDate');
+        const dateShow = document.getElementById('dateShow');
+
+        if (savedDate) {
+            dateShow.textContent = savedDate;
+        } else {
+            dateShow.textContent =  'Скоро все будет!';
+        }
+    </script>
+</body>
+</html>
